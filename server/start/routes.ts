@@ -24,6 +24,10 @@ Route.get('/', async () => {
   return { hello: 'world' }
 })
 
-Route.get('/user', async () => {
-  
-})
+Route.group(() => {
+  Route.get('/', 'UsersController.getAllUsers')
+  Route.get('/:id', 'UsersController.getUser')
+  Route.post('/', 'UsersController.createUser')
+  Route.put('/:id', 'UsersController.updateUser')
+  Route.delete('/:id', 'UsersController.deleteUser')
+}).prefix('/users')

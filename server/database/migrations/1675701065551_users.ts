@@ -1,16 +1,16 @@
 import BaseSchema from '@ioc:Adonis/Lucid/Schema'
 
 export default class User extends BaseSchema {
-    protected tableName = 'user'
+    protected tableName = 'users'
 
     public async up () {
         this.schema.createTable(this.tableName, (table) => {
             table.bigIncrements('id_user')
             table.integer('role').notNullable()
-            table.string('username').notNullable()
+            table.string('email').notNullable().unique()
             table.string('password').notNullable()
-            table.string('firstname').notNullable()
-            table.string('lastname').notNullable()
+            table.string('firstname')
+            table.string('lastname')
         })
     }
 
