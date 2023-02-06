@@ -31,3 +31,11 @@ Route.group(() => {
   Route.put('/:id', 'UsersController.updateUser')
   Route.delete('/:id', 'UsersController.deleteUser')
 }).prefix('/users')
+
+Route.group(() => {
+  Route.get('/', 'CartsController.getAllUsers')
+  Route.get('/:id', 'CartsController.getUser')
+  Route.post('/', 'CartsController.createUser')
+  Route.put('/:id', 'CartsController.updateUser')
+  Route.delete('/:id', 'CartsController.deleteUser')
+}).prefix('/carts')
