@@ -1,15 +1,15 @@
-### fallback-flamant-back
+# fallback-flamant-back
 
 ## Projet
 Ce projet a été réaliser pendant un challenge 48 heures à l'école Nantes ynov Campus 
 
-Nous devions faire en sorte de pouvoir décentraliser les sites de 1522 commerçants. Cela leur permettrait d'avoir plus de visibilité car il formerait un fediverse["https://serveur410.com/le-fediverse-cest-quoi-et-comment-lutiliser/"].
+Nous devions faire en sorte de pouvoir décentraliser les sites de 1522 commerçants. Cela leur permettrait d'avoir plus de visibilité car il formerait un fediverse("https://serveur410.com/le-fediverse-cest-quoi-et-comment-lutiliser/").
 
 La décentralisation a plusieurs avantages notamment le faite de pouvoir se créer un compte sur un serveur mais pouvoir s'y connecter depuis un autre serveur, d'acheter des articles d'un marchand sur le site d'un autre marchand (seulement s'il accepte de bien vouloir vendre ces produits) car oui chaque serveur peut avoir ses propres règles et choix d'affichage ! Un autre gros avantage encore est de ne pas devoir se créer un compte sur chaque serveur ce qui apporte un gros gain de place pour stocker les données.
 
 Concrètement nous devions former un réseau de serveurs servants chacun leurs propres produits ainsi que les produits des autres serveurs auxquels ils sont connectés, *sans entité centrale*
 
-ENONCÉ[https://tardigrade.land/campus/0/module/7/assignment/0?share=72c63dde-8aac-4a34-8ca4-dc36851b137f]
+ENONCÉ(https://tardigrade.land/campus/0/module/7/assignment/0?share=72c63dde-8aac-4a34-8ca4-dc36851b137f)
 
 ## TECHNOLOGIES UTILISÉES + INSTALLATIONS
 
