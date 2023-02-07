@@ -6,10 +6,9 @@ export default class AuthController {
     async login({ request, response, auth }: HttpContextContract) {
         const email = request.input("email");
         const password = request.input("password");
-
         try {
             const token = auth.use('api').attempt(email, password, { expiresIn: '45 mins'});
-
+            console.log(token)
             // // Lookup user manually
             // const user = await User
             //     .query()
