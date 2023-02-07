@@ -3,7 +3,7 @@
 ## Projet
 Ce projet a été réalisé dans le cadre du Challenge 48 Heures 2023 de Nantes ynov Campus.
 
-Le principal objectif était de décentraliser les sites de 1522 commerçants. Cela leur permettrait d'avoir plus de visibilité car il formerait un [fediverse]("https://serveur410.com/le-fediverse-cest-quoi-et-comment-lutiliser/").
+Le principal objectif était de décentraliser les sites de 1522 commerçants. Cela leur permettrait d'avoir plus de visibilité car il formerait un [fediverse](https://serveur410.com/le-fediverse-cest-quoi-et-comment-lutiliser/).
 
 La décentralisation a plusieurs avantages, notamment le fait de pouvoir se créer un compte sur un serveur et pouvoir se connecter sur un autre serveur via ce même compte. Conséquemment, l'utilisateur peut acheter les articles d'un marchand sur le site d'un autre marchand (seulement s'il accepte de bien vouloir vendre ces produits) car chaque serveur peut avoir ses propres règles de gestion et choix d'affichage ! De sus, cela permet de ne pas devoir se créer un compte sur chaque serveur, ce qui apporte un gros gain de place pour stocker les données et améliore l'expérience utilisateur.
 
