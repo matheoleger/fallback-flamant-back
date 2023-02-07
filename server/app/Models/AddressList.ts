@@ -6,10 +6,10 @@ export default class AddressList extends BaseModel {
   public id: number
 
   @column()
-  public port :number
+  public address :string
 
   @column()
-  public address :string
+  public port :number
 
   @column.dateTime({ autoCreate: true })
   public createdAt: DateTime
