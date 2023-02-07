@@ -43,37 +43,6 @@ Afin de pouvoir lancer le serveur, il vous suffit de renseigner la commande ``` 
 
 Ensuite, accédez au dossier nommé *server* en tapant la commande ```cd server```.
 
-<<<<<<< HEAD
-il vous suffit ensuite de taper la commande ```npm run dev``` et de vous rendre sur l'adresse http://127.0.0.1:3333
-
-## SOLUTION ENVISAGÉE
-
-Nous avions comme idée de mettre sur docker un container par site avec dedans, chaque partie dont on avait besoin (back/front/api). Chaque site aurait ses propres donnés mais avec les mêmes models.
-
-Pour rechercher ou changer une information on enverrait une requête qui parcourait chaque API de tous les noeuds possibles tant qu'elle n'aurait pas trouvé la valeur (si la valeur n'existe pas on enverrait un message une fois tous les noeuds parcourus).
-
-# POUR ALLER PLUS LOIN 
-
-Nous avions pensé à pouvoir rassembler les sites/base de données en fonction des personnes qui les fréquentent par exemple si 2 sites internet reçoivent des clients très rapprocher il faudrait les mettre sur des noeuds voisins pour pouvoir parcourir et récupéré les données utiles plus rapidement.
-
-## SOLUTION APPORTÉ 
-
-Nous avons pu faire l'API ainsi que la docker mais faute de temps, nous n'avons pas réussi à lier les sites entre eux ou à récupérer les valeurs d'un autre site depuis un site. Mais avec plus de temps nous sommes sûrs que nous aurions réussi à pouvoir lier les API ainsi que les sites.
-
-## PERFORMANCE 
-
-Notre méthode est performante dans le sens où si elle trouve une valeur dans les noeuds proches de notre site, on aura parcouru un nombre minime de données, ce qui nous évite des tas de calculs inutiles. Notamment dans le cas où on tirait les sites dans les noeuds en fonction des personnes qui s'y connectent. 
-
-Avec la décentralisation il y a également une economie de données on peut utiliser des plus petits serveur sans pour autant diminuer le nombre de sites. 
-
-Concernant Docker nous l'avons choisi car il permet une grande mobilité de déploiement et une forte scalabilité comparée à des machines virtuelles classiques.
-
-Imaginons que l'utilisateur fait une recherche sur un article, le temps d'attente peut être très long s'il y a un nombre considérable d'éléments. C'est pour cela que l'on utiliserait des promesses, cela permettrait que lorsque l'on reçoit les informations d'un noeud, on l'affiche directement à l'écran de l'utilisateur plutôt que d'attendre tous les éléments puis enfin de les afficher. Cela lui permettra de ne pas attendre trop longtemps ou que le temps ne lui paraisse pas long.
-
-La décentralisation est un nouveau moyen de naviguer et facile d'accès. L'utilisateur n'a pas besoin de sortir du site pour rechercher un article ce qui fait gagner en ergonomie.
-
-### CONTRIBUTEURS
-=======
 Il vous suffit ensuite d'exécuter la commande ```npm run dev``` et de vous rendre sur l'adresse http://127.0.0.1:3333.
 
 ## SOLUTION ENVISAGÉE
@@ -103,7 +72,6 @@ Imaginons que l'utilisateur fait une recherche sur un article, le temps d'attent
 La décentralisation est un nouveau moyen de naviguer et améliore grandement l'expérience utilisateur. L'utilisateur n'a pas besoin de sortir du site pour rechercher un article, ce qui fait gagner en ergonomie.
 
 # CONTRIBUTEURS
->>>>>>> 13176d629fde677b62c5a3bc39643e20912b4f12
 
 * [Nathan SCHNEIDER](https://github.com/NatSch45) - B3 IA/Data
 * Romain DUVERGER - B3 Cybersec
