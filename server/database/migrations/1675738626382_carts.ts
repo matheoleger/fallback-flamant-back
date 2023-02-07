@@ -1,13 +1,13 @@
 import BaseSchema from '@ioc:Adonis/Lucid/Schema'
 
-export default class AdressList extends BaseSchema {
-    protected tableName = 'adress_lists'
+export default class Carts extends BaseSchema {
+    protected tableName = 'carts'
 
     public async up () {
         this.schema.createTable(this.tableName, (table) => {
-            table.bigIncrements('id')
-            table.string('adress').notNullable()
-            table.integer('port').notNullable()
+            table.bigIncrements('id_cart')
+            table.bigInteger('user').notNullable()
+            table.timestamps()
         })
     }
 
