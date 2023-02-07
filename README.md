@@ -49,10 +49,10 @@ il vous suffit ensuite de taper la commande ```npm run dev``` et de vous rendre 
 
 ### CONTRIBUTORS
 
-* Nathan SCHNEIDER - B3 IA/Data
-* Romain DUVERGER - B3 Cybersec
-* Mathéo LEGER - B3 Dev
-* Flavio CORMERAIS - B2
-* Jordan ZOKPODO - B2
-* Tilio BOURIGAULT - B1
-* Mathis SILOTIA - B1
+* [Nathan SCHNEIDER](https://github.com/NatSch45) - B3 IA/Data
+* [Romain DUVERGER]() - B3 Cybersec
+* [Mathéo LEGER](https://github.com/matheoleger) - B3 Dev
+* [Flavio CORMERAIS](https://github.com/FCORMERAIS) - B2
+* [Jordan ZOKPODO]() - B2
+* [Tilio BOURIGAULT]() - B1
+* [Mathis SILOTIA]() - B1
