@@ -20,8 +20,7 @@
 
 import Route from '@ioc:Adonis/Core/Route'
 
-Route.get('/cart', 'CartsController.getAllCarts')
-
+//* User endpoints
 Route.group(() => {
   Route.get('/', 'UsersController.getAllUsers')
   Route.get('/:id', 'UsersController.getUser')
@@ -30,6 +29,7 @@ Route.group(() => {
   Route.delete('/:id', 'UsersController.deleteUser')
 }).prefix('/users')
 
+//* Cart endpoints
 Route.group(() => {
   Route.get('/', 'CartsController.getAllCarts')
   Route.get('/:id', 'CartsController.getCart')
@@ -38,6 +38,7 @@ Route.group(() => {
   Route.delete('/:id', 'CartsController.deleteCart')
 }).prefix('/carts')
 
+//* Article endpoints
 Route.group(() => {
   Route.get('/', 'ArticlesController.getAllArticles')
   Route.get('/:id', 'ArticlesController.getArticle')
@@ -46,6 +47,7 @@ Route.group(() => {
   Route.delete('/:id', 'ArticlesController.deleteArticle')
 }).prefix("/articles")
 
+//* Adress list endpoints
 Route.group(() => {
   Route.get('/', 'AddressListsController.getAllAddressList')
   Route.get('/:id', 'AddressListsController.getAddressList')
@@ -53,3 +55,7 @@ Route.group(() => {
   Route.put('/:id', 'AddressListsController.updateAddressList')
   Route.delete('/:id', 'AddressListsController.deleteAddressList')
 }).prefix("/addresslists")
+
+//* Authentication endpoints
+Route.post('/login', 'AuthController.login') // Return a Bearer Token when user logged in
+Route.get('/me', 'AuthController.me').middleware('auth') // Protected access
