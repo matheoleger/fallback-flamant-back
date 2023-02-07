@@ -1,14 +1,16 @@
-import { BaseModel, column } from '@ioc:Adonis/Lucid/Orm'
 import { DateTime } from 'luxon'
+import { BaseModel, column } from '@ioc:Adonis/Lucid/Orm'
 
-
-export default class Cart extends BaseModel {
+export default class AddressList extends BaseModel {
   @column({ isPrimary: true })
-  public idCart: number
+  public id: number
 
   @column()
-  public user: number
-  
+  public port :number
+
+  @column()
+  public address :string
+
   @column.dateTime({ autoCreate: true })
   public createdAt: DateTime
 

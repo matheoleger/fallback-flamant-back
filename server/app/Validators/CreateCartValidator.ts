@@ -24,7 +24,6 @@ export default class CreateUserValidator {
    *    ```
    */
   public schema = schema.create({
-    id_cart: schema.number(),
 
     user: schema.number(),
 

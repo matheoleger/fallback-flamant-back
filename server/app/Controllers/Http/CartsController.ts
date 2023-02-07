@@ -22,7 +22,7 @@ export default class CartsController {
 
     async updateCart({request, response}: HttpContextContract) {
         const payload = await request.validate(CreateCartValidator);
-        const cart = await Cart.updateOrCreate({ id_cart: request.param('id') }, payload);
+        const cart = await Cart.updateOrCreate({ idCart : request.param('id') }, payload);
         return response.json(cart);
     }
 

@@ -45,3 +45,11 @@ Route.group(() => {
   Route.put('/:id', 'ArticlesController.updateArticle')
   Route.delete('/:id', 'ArticlesController.deleteArticle')
 }).prefix("/articles")
+
+Route.group(() => {
+  Route.get('/', 'AddressListsController.getAllAddressList')
+  Route.get('/:id', 'AddressListsController.getAddressList')
+  Route.post('/', 'AddressListsController.createAddressList')
+  Route.put('/:id', 'AddressListsController.updateAddressList')
+  Route.delete('/:id', 'AddressListsController.deleteAddressList')
+}).prefix("/addresslists")
