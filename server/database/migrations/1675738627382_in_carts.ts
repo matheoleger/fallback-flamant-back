@@ -1,13 +1,14 @@
 import BaseSchema from '@ioc:Adonis/Lucid/Schema'
 
-export default class InCart extends BaseSchema {
+export default class InCarts extends BaseSchema {
     protected tableName = 'in_carts'
 
     public async up () {
         this.schema.createTable(this.tableName, (table) => {
             table.bigIncrements('id_in_cart')
-            table.bigInteger('cart').notNullable().references('carts.id_cart').onDelete('CASCADE')
-            table.bigInteger('article').notNullable().references('articles.id_article').onDelete('CASCADE')
+            table.bigInteger('cart').notNullable()
+            table.bigInteger('article').notNullable()
+            table.timestamps()
         })
     }
 
