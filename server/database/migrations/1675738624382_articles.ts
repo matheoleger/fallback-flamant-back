@@ -1,6 +1,6 @@
 import BaseSchema from '@ioc:Adonis/Lucid/Schema'
 
-export default class Article extends BaseSchema {
+export default class Articles extends BaseSchema {
     protected tableName = 'articles'
 
     public async up () {
@@ -9,6 +9,7 @@ export default class Article extends BaseSchema {
             table.string('name').notNullable()
             table.bigInteger('price').notNullable()
             table.text('description').notNullable()
+            table.timestamps()
         })
     }
 
