@@ -1,4 +1,4 @@
-### fallback-flamant-back
+# fallback-flamant-back
 
 ## Projet
 Ce projet a été réaliser pendant un challenge 48 heures à l'école Nantes ynov Campus 
@@ -51,7 +51,7 @@ Nous avions comme idée de mettre sur docker un container par site avec dedans, 
 
 Pour rechercher ou changer une information on enverrait une requête qui parcourait chaque API de tous les noeuds possibles tant qu'elle n'aurait pas trouvé la valeur (si la valeur n'existe pas on enverrait un message une fois tous les noeuds parcourus).
 
-# POUR ALLER PLUS LOIN 
+### POUR ALLER PLUS LOIN 
 
 Nous avions pensé à pouvoir rassembler les sites/base de données en fonction des personnes qui les fréquentent par exemple si 2 sites internet reçoivent des clients très rapprocher il faudrait les mettre sur des noeuds voisins pour pouvoir parcourir et récupéré les données utiles plus rapidement.
 
@@ -69,7 +69,7 @@ Concernant Docker nous l'avons choisi car il permet une grande mobilité de dép
 
 La décentralisation est un nouveau moyen de naviguer et facile d'accès. L'utilisateur n'a pas besoin de sortir du site pour rechercher un article ce qui fait gagner en ergonomie.
 
-### CONTRIBUTEURS
+# CONTRIBUTEURS
 
 * [Nathan SCHNEIDER](https://github.com/NatSch45) - B3 IA/Data
 * Romain DUVERGER - B3 Cybersec
