@@ -6,7 +6,7 @@ export default class Carts extends BaseSchema {
     public async up () {
         this.schema.createTable(this.tableName, (table) => {
             table.bigIncrements('id_cart')
-            table.bigInteger('user').notNullable()
+            table.bigInteger('user').notNullable().references('id_user').inTable('users').onDelete('CASCADE')
             table.timestamps()
         })
     }

@@ -20,9 +20,7 @@
 
 import Route from '@ioc:Adonis/Core/Route'
 
-Route.get('/', async () => {
-  return { hello: 'world' }
-})
+Route.get('/cart', 'CartsController.getAllCarts')
 
 Route.group(() => {
   Route.get('/', 'UsersController.getAllUsers')
@@ -33,9 +31,25 @@ Route.group(() => {
 }).prefix('/users')
 
 Route.group(() => {
+  Route.get('/', 'CartsController.getAllCarts')
+  Route.get('/:id', 'CartsController.getCart')
+  Route.post('/', 'CartsController.createCart')
+  Route.put('/:id', 'CartsController.updateCart')
+  Route.delete('/:id', 'CartsController.deleteCart')
+}).prefix('/carts')
+
+Route.group(() => {
   Route.get('/', 'ArticlesController.getAllArticles')
   Route.get('/:id', 'ArticlesController.getArticle')
   Route.post('/', 'ArticlesController.createArticle')
   Route.put('/:id', 'ArticlesController.updateArticle')
   Route.delete('/:id', 'ArticlesController.deleteArticle')
 }).prefix("/articles")
+
+Route.group(() => {
+  Route.get('/', 'AddressListsController.getAllAddressList')
+  Route.get('/:id', 'AddressListsController.getAddressList')
+  Route.post('/', 'AddressListsController.createAddressList')
+  Route.put('/:id', 'AddressListsController.updateAddressList')
+  Route.delete('/:id', 'AddressListsController.deleteAddressList')
+}).prefix("/addresslists")
