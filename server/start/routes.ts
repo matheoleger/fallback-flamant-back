@@ -20,7 +20,7 @@
 
 import Route from '@ioc:Adonis/Core/Route'
 
-Route.get('/cart', 'CartsController.getAllUsers')
+Route.get('/cart', 'CartsController.getAllCarts')
 
 Route.group(() => {
   Route.get('/', 'UsersController.getAllUsers')
@@ -31,9 +31,9 @@ Route.group(() => {
 }).prefix('/users')
 
 Route.group(() => {
-  Route.get('/', 'CartsController.getAllUsers')
-  Route.get('/:id', 'CartsController.getUser')
-  Route.post('/', 'CartsController.createUser')
-  Route.put('/:id', 'CartsController.updateUser')
-  Route.delete('/:id', 'CartsController.deleteUser')
+  Route.get('/', 'CartsController.getAllCarts')
+  Route.get('/:id', 'CartsController.getCart')
+  Route.post('/', 'CartsController.createCart')
+  Route.put('/:id', 'CartsController.updateCart')
+  Route.delete('/:id', 'CartsController.deleteCart')
 }).prefix('/carts')
