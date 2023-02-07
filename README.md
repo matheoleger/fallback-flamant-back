@@ -61,11 +61,13 @@ Nous avons pu faire l'API ainsi que la docker mais faute de temps, nous n'avons 
 
 ## PERFORMANCE 
 
-Notre méthode est performante dans le sens ou si elle trouve une valeur dans les noeuds proches de notre site et bien l'on aura parcouru un nombre minime de données ce qui nous évite des tas de calculs inutiles notamment dans le cas où on tirait les sites dans les noeuds en fonction des personnes qui s'y connectent. 
+Notre méthode est performante dans le sens où si elle trouve une valeur dans les noeuds proches de notre site, on aura parcouru un nombre minime de données, ce qui nous évite des tas de calculs inutiles. Notamment dans le cas où on tirait les sites dans les noeuds en fonction des personnes qui s'y connectent. 
 
-Avec la décentralisation il y a également une economie de données on peut utiliser des plus petits serveur sans pour autant diminuer le nombre de sites 
+Avec la décentralisation il y a également une economie de données on peut utiliser des plus petits serveur sans pour autant diminuer le nombre de sites. 
 
-Concernant Docker nous l'avons choisi car il permet une grande mobilité de déploiement et une forte scalabilité comparée à des VM classiques.
+Concernant Docker nous l'avons choisi car il permet une grande mobilité de déploiement et une forte scalabilité comparée à des machines virtuelles classiques.
+
+Imaginons que l'utilisateur fait une recherche sur un article, le temps d'attente peut être très long s'il y a un nombre considérable d'éléments. C'est pour cela que l'on utiliserait des promesses, cela permettrait que lorsque l'on reçoit les informations d'un noeud, on l'affiche directement à l'écran de l'utilisateur plutôt que d'attendre tous les éléments puis enfin de les afficher. Cela lui permettra de ne pas attendre trop longtemps ou que le temps ne lui paraisse pas long.
 
 La décentralisation est un nouveau moyen de naviguer et facile d'accès. L'utilisateur n'a pas besoin de sortir du site pour rechercher un article ce qui fait gagner en ergonomie.
 
