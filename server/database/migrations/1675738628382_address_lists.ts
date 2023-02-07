@@ -5,7 +5,7 @@ export default class AddressLists extends BaseSchema {
 
     public async up () {
         this.schema.createTable(this.tableName, (table) => {
-            table.bigIncrements('id')
+            table.bigIncrements('id').primary()
             table.string('address').notNullable()
             table.integer('port').notNullable()
             table.timestamps()

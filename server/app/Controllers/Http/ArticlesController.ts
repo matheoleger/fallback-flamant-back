@@ -1,4 +1,5 @@
 import type { HttpContextContract } from '@ioc:Adonis/Core/HttpContext'
+import AddressList from 'App/Models/AddressList';
 import Article from 'App/Models/Article';
 import CreateArticleValidator from 'App/Validators/CreateArticleValidator'
 
@@ -10,7 +11,14 @@ export default class ArticleController {
     }
 
     async getArticle({request, response}: HttpContextContract) {
-        const article = await Article.findOrFail(request.param('id'));
+        console.log("Call to first API");
+        let article = await Article.find(request.param('id'));
+        if (!article) {
+            const addressLists = await AddressList.all();
+            for (const api of addressLists) {
+                const url = `${api.address}:${api.port}`
+            }
+        }
         return response.json(article);
     }
 

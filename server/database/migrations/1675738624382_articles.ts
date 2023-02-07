@@ -5,8 +5,8 @@ export default class Articles extends BaseSchema {
 
     public async up () {
         this.schema.createTable(this.tableName, (table) => {
-            table.bigIncrements('id_article')
-            table.string('email').notNullable()
+            table.bigIncrements('id_article').primary()
+            table.string('name').notNullable()
             table.bigInteger('price').notNullable()
             table.text('description').notNullable()
             table.timestamps()
