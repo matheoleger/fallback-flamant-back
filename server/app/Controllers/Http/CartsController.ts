@@ -5,30 +5,30 @@ import CreateCartValidator from 'App/Validators/CreateCartValidator';
 export default class CartsController {
 
     async getCart({request, response}: HttpContextContract) {
-        const user = await Cart.findOrFail(request.param('id'));
-        return response.json(user);
+        const cart = await Cart.findOrFail(request.param('id'));
+        return response.json(cart);
     }
 
-    async getAllUsers({response}: HttpContextContract) {
-        const users = await Cart.all()
-        return response.json(users)
+    async getAllCarts({response}: HttpContextContract) {
+        const carts = await Cart.all()
+        return response.json(carts)
     }
 
-    async createUser({request, response}: HttpContextContract) {
+    async createCart({request, response}: HttpContextContract) {
         const payload = await request.validate(CreateCartValidator);
-        const user = await Cart.create(payload);
-        return response.json(user);
+        const cart = await Cart.create(payload);
+        return response.json(cart);
     }
 
-    async updateUser({request, response}: HttpContextContract) {
+    async updateCart({request, response}: HttpContextContract) {
         const payload = await request.validate(CreateCartValidator);
-        const user = await Cart.updateOrCreate({ id_cart: request.param('id') }, payload);
-        return response.json(user);
+        const cart = await Cart.updateOrCreate({ id_cart: request.param('id') }, payload);
+        return response.json(cart);
     }
 
-    async deleteUser({request, response}: HttpContextContract) {
-        const user = await Cart.findOrFail(request.param("id"));
-        await user.delete();
-        return response.json({ data: user });
+    async deleteCart({request, response}: HttpContextContract) {
+        const cart = await Cart.findOrFail(request.param("id"));
+        await cart.delete();
+        return response.json({ data: cart });
     }
 }
